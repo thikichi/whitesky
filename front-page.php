@@ -25,35 +25,10 @@
 
 <div class="mainbody">
 
-  <!-- homeslider -->
-  <!--==================================================-->
-
-  <div class="homeslider">
-    <div class="container">
-      <div class="homeslider-inner">
-        <div class="homeslider-inner-1">
-          <div class="homeslider-main">
-            <div class="homeslider-mv-navi">
-              <ul class="slider-nav">
-                <?php
-                foreach ($custom_header_images as $custom_header_image) {
-                  echo '<li>';
-                  echo '<img src="' . $custom_header_image['url'] . '" alt="">';
-                  echo '</li>';
-                }
-                ?>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- .homeslider -->
-
   <!-- homecontent-1 -->
   <!--==================================================-->
 
-  <div class="homecontent-1 mb-xs-50 mb-lg-100">
+  <div class="homecontent-1 mt-xs-50 mt-lg-70 mb-xs-50 mb-lg-100">
     <div class="container">
       <div class="homecontent-1-inner">
         <h2 class="fadeline">

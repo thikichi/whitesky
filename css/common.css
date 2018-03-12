@@ -9,10 +9,6 @@ a:hover {
 dl, ol, ul, p {
     margin: 0;
 }
-body.home {
-  background-color: #EFEFEF;
-}
-
 h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
@@ -191,10 +187,6 @@ li.widget > ul > li:hover::before {
 /* mainbody */
 /*--------------------------------------------------*/
 
-body.home .mainbody {
-  background-color: #EFEFEF;
-}
-
 /* component css */
 /*--------------------------------------------------*/
 
@@ -217,47 +209,7 @@ body.home .mainbody {
 }
 
 
-/* homeslider */
-/*--------------------------------------------------*/
 
-.homeslider {
-
-}
-.homeslider-inner {}
-.homeslider-inner-1 {
-  position: relative;
-  height: 95px;
-}
-.homeslider-main {
-  position: absolute;
-  left: 0;
-  top: -100px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 1.0);
-  padding: 30px;
-}
-.homeslider-mv-navi li {
-  cursor: pointer;
-}
-.homeslider-mv-navi li > img {
-  width: 100%;
-  height: auto;
-}
-
-.homeslider-inner-2 {
-  background-color: rgba(255, 255, 255, 1.0);
-  padding: 15px 50px 50px 50px;
-}
-.homeslider-title {
-  text-align: center;
-  margin: 20px 0 20px 0;
-}
-/* 0～575 */
-@media (max-width: 575px) {
-  .homeslider-main {
-    padding: 15px;
-  }
-}
 
 /* posts-navigation */
 /*--------------------------------------------------*/
@@ -363,8 +315,6 @@ body.home .mainbody {
   margin-bottom: 50px;
 }
 .homecontent-1-inner {
-  background-color: #FFF;
-  padding: 50px;
 }
 .homecontent-box {
   display: block;
