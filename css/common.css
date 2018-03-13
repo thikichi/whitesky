@@ -32,8 +32,6 @@ h1,h2,h3,h4,h5,h6,p {
 /* navigation */
 /*--------------------------------------------------*/
 
-/* navigation-sp */
-
 .navigation {
   background-color: #FFF;
 }
@@ -59,26 +57,6 @@ ul#menu-global-navigation > li:not(:last-child)::after {
   right: 0;
   top: 5px;
 }
-/* 992～∞（lg）*/
-@media (min-width: 992px) {
-  #navigation-sp {
-    display: none;
-  }
-}
-/* 0～991 */
-@media (max-width: 991px) {
-  #navigation-sp {
-    display: block;
-  }
-  #navigation-pc {
-    display: none;
-  }
-}
-
-
-
-
-
 #navigation-pc .menu > li > a {
   display: block;
   padding: 7px 30px;
@@ -110,6 +88,35 @@ ul#menu-global-navigation > li:not(:last-child)::after {
   top: 0;
 }
 
+/* sp */
+#navigation-sp .slicknav_nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#navigation-sp .slicknav_nav li {
+  padding: 5px 0;
+}
+#navigation-sp .slicknav_nav li:not(:last-child) {
+  border-bottom: 1px solid #777;
+}
+#navigation-sp .sub-menu li:not(:last-child) {
+  border-bottom: 1px dashed #777;
+}
+
+/* 992～∞（lg）*/
+@media (min-width: 992px) {
+  #navigation-sp {
+    display: none;
+  }
+}
+/* 0～991 */
+@media (max-width: 991px) {
+  #navigation-sp {
+    display: block;
+  }
+  #navigation-pc {
+    display: none;
+  }
+}
 
 /* mainvisual */
 /*--------------------------------------------------*/

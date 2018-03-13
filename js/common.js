@@ -9,6 +9,8 @@ jQuery(function($) {
 
   // SP navi
   $('#menu-global-navigation').slicknav({
+    closedSymbol: '<i class="fa fa-angle-double-right"></i>',
+    openedSymbol: '<i class="fa fa-angle-double-down"></i>',
     prependTo:'#navigation-sp'
   });
 
