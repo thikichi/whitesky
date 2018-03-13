@@ -31,7 +31,7 @@
   <div class="homecontent-1 mt-xs-50 mt-lg-70 mb-xs-50 mb-lg-100">
     <div class="container">
       <div class="homecontent-1-inner">
-        <h2 class="fadeline">
+        <h2 class="fadeline fadeline-subttl mb-xs-30 mb-lg-50">
           <span class="fadeline-main family-serif">最新の記事一覧</span>
         </h2>
         <?php

@@ -190,6 +190,20 @@ li.widget > ul > li:hover::before {
   left: 0.25em;
 }
 
+.widget_media_gallery {
+
+}
+li.widget_media_gallery a {
+    padding-left: 0;
+}
+li.widget_media_gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  border: none !important;
+}
+.gallery-item {
+  padding: 2px;
+}
 
 /* mainbody */
 /*--------------------------------------------------*/
@@ -276,7 +290,6 @@ li.widget > ul > li:hover::before {
 .fadeline {
   text-align: center;
   overflow: hidden;
-  margin-bottom: 50px;
 }
 .fadeline-main {
   display: inline-block;
@@ -309,6 +322,12 @@ li.widget > ul > li:hover::before {
 @keyframes titleborder {
   0%   { width:  0; }
   100% { width: 500px; }
+}
+/* 0～767 */
+@media (max-width: 767px) {
+  .fadeline-subttl {
+    font-size: 24px;
+  }
 }
 
 
