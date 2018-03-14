@@ -171,7 +171,6 @@ li.widget > ul > li {
   position: relative;
 }
 li.widget a {
-  display: block;
   padding-left: 1em;
 }
 li.widget > ul > li::before {
@@ -204,6 +203,52 @@ li.widget_media_gallery .gallery-item img {
 .gallery-item {
   padding: 2px;
 }
+
+li.widget label {
+  display: none;
+}
+li.widget select {
+  width: 100%;
+}
+li.widget ul.children {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+li.widget ul.children li:before {
+  content: '-';
+}
+/* sidebar search box */
+.sidebar .widget_search input[name="s"] {
+  width: 195px;
+  height: 30px;
+}
+.sidebar .widget_search input[type="submit"] {
+  height: 30px;
+}
+/* 0～1199 */
+@media (max-width: 1199px) {
+  .sidebar .widget_search input[name="s"] {
+    width: 150px;
+  }
+}
+/* 0～575 */
+@media (max-width: 575px) {
+  .sidebar .widget_search input[name="s"] {
+    width: 229px;
+  }
+}
+
+/* 最近の投稿 */
+li.widget_recent_entries .post-date {
+  font-size: 12px;
+}
+li.widget_recent_entries .post-date::before {
+  content: '( ';
+}
+li.widget_recent_entries .post-date::after {
+  content: ') ';
+}
+
 
 /* mainbody */
 /*--------------------------------------------------*/
