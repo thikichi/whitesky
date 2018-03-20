@@ -1,7 +1,7 @@
 jQuery(function($) {
 
   // PC navi
-  $('.menu-item-has-children').hover(function() {
+  $('#navigation-pc .menu-item-has-children').hover(function() {
     $(this).children('ul.sub-menu').stop().slideDown();
   }, function() {
     $(this).children('ul.sub-menu').stop().slideUp();

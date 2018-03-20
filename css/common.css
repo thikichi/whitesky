@@ -32,26 +32,23 @@ h1,h2,h3,h4,h5,h6,p {
 /* navigation */
 /*--------------------------------------------------*/
 
-.navigation {
-  background-color: #FFF;
-}
 #navigation-pc {
   border-bottom: 1px solid #CCC;
 }
-.navigation-sp ul {}
-.navigation-sp ul li {}
-
-ul#menu-global-navigation {
+#navigation-pc .navigation {
+  background-color: #FFF;
+}
+#navigation-pc ul#menu-global-navigation {
   display: table;
   margin: auto;
   padding: 10px 0;
 }
-ul#menu-global-navigation > li {
+#navigation-pc ul#menu-global-navigation > li {
   display: table-cell;
   color: #333;
   position: relative;
 }
-ul#menu-global-navigation > li:not(:last-child)::after {
+#navigation-pc ul#menu-global-navigation > li:not(:last-child)::after {
   content: '/';
   position: absolute;
   right: 0;
@@ -164,7 +161,8 @@ li.widget {
   margin-bottom: 30px;
 }
 li.widget_categories {}
-li.widget > ul > li {
+li.widget > ul > li,
+li.widget ul.menu > li {
   border-bottom: 1px dotted #777;
   padding-bottom: 5px;
   margin-bottom: 5px;
@@ -173,7 +171,11 @@ li.widget > ul > li {
 li.widget a {
   padding-left: 1em;
 }
-li.widget > ul > li::before {
+li.widget_tag_cloud a:first-child {
+  padding-left: 0;
+}
+li.widget > ul > li::before,
+li.widget ul.menu > li::before {
   position: absolute;
   content: '\f105';
   font-family: FontAwesome;
@@ -214,9 +216,25 @@ li.widget ul.children {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-li.widget ul.children li:before {
+li.widget ul.children li:before,
+li.widget ul.sub-menu li.menu-item:before {
   content: '-';
+/*  margin-left: 0.5em;*/
 }
+
+/*li.widget_search .menu-item-has-children {
+  margin-left: 1em;
+}*/
+li.widget ul.sub-menu {
+  margin-left: 1em !important;
+}
+li.widget ul.sub-menu li.menu-item-has-children:before {
+  content: '\f105';
+  font-family: FontAwesome;
+}
+
+
+
 /* sidebar search box */
 .sidebar .widget_search input[name="s"] {
   width: 195px;
@@ -248,6 +266,11 @@ li.widget_recent_entries .post-date::before {
 li.widget_recent_entries .post-date::after {
   content: ') ';
 }
+
+
+
+
+
 
 
 /* mainbody */
