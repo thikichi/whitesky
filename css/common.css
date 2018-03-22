@@ -543,6 +543,33 @@ li.widget_recent_entries .post-date::after {
   text-align: center;
 }
 
+/* comments */
+/*--------------------------------------------------*/
+
+ul#comments-list {}
+ul#comments-list li {
+  border: 1px solid #CCC;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

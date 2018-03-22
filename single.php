@@ -36,7 +36,10 @@
               <div class="single-content">
                 <?php the_content(); ?>
               </div>
-
+              <?php /* comments */ ?>
+              <div class="comments mb-10">
+                <?php comments_template(); ?>
+              </div>
               <div class="pagination mt-30">
                 <div class="pagination-previous">
                   <?php if( get_previous_post_link() ): ?>
@@ -53,7 +56,6 @@
                   <?php endif; ?>
                 </div>
               </div>
-
             <?php else: ?>
               <p class="no-article single-no-article">
                 まだ記事の投稿がありません。
