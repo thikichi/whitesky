@@ -546,15 +546,46 @@ li.widget_recent_entries .post-date::after {
 /* comments */
 /*--------------------------------------------------*/
 
-ul#comments-list {}
-ul#comments-list li {
-  border: 1px solid #CCC;
+.comments-wrapper {
+  margin-top:50px;
+}
+ul.comments-list {}
+ul.comments-list li {
+  border: 1px solid #777;
   padding: 15px;
   margin-bottom: 15px;
 }
-
-
-
+.comments-count {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.comment-meta {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.comment-body p {
+  margin-bottom: 15px;
+}
+.comment-reply-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: #FFF;
+  padding: 3px;
+  font-size: 14px;
+}
+.comment-reply-link:hover {
+  color: #FFF;
+  background-color: #777;
+}
+.comment-author .fn {
+  font-size: 18px;
+  margin-left: 5px;
+}
+.comment-author .says {
+  font-size: 14px;
+}
 
 
 
